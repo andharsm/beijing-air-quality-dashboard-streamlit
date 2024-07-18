@@ -1,5 +1,9 @@
 # Indeks Kualitas Udara (AQI) Beijing
 
+![Uploading Streamlit - Google Chrome 2024-07-18 16-58-53 (1).gif…]()
+
+Akses dashboard: [AQI Dashboard](https://beijing-air-quality-dashboard.streamlit.app/)
+
 Panduan ini akan membantu Anda untuk menjalankan Dashboard Indeks Kualitas Udara (AQI) Beijing dengan Streamlit di komputer lokal Anda. Kami akan menggunakan file `app.py` sebagai file utama dan `requirements.txt` untuk daftar dependensi.
 
 ## Persyaratan
