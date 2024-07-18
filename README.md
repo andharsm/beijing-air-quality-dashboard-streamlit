@@ -15,8 +15,8 @@ Pastikan Anda sudah menginstal:
 Jika Anda belum memiliki kode sumber aplikasi, clone atau download dari repository.
 
 ```
-git clone <URL-REPOSITORY-ANDA>
-cd <NAMA-DIREKTORI-REPOSITORY>
+git clone github.com/andharsm/beijing-air-quality-dashboard-streamlit.git
+cd beijing-air-quality-dashboard-streamlit
 ```
 
 ### 2. Buat Virtual Environment
@@ -64,6 +64,7 @@ Buka URL tersebut di browser Anda untuk melihat aplikasi Streamlit yang berjalan
 Pastikan struktur direktori Anda sesuai dengan berikut:
 ```
 .
+├── datasets
 ├── app.py
 ├── func.py
 ├── analysis_data_air_quality.ipynb
@@ -71,6 +72,7 @@ Pastikan struktur direktori Anda sesuai dengan berikut:
 └── venv/
 ```
 
+* `datasets`: Folder dengan kumpulan dataset dalam format CSV
 * `app.py`: File utama aplikasi Streamlit Anda.
 * `func.py`: File berisi kumpulan fungsi pendukung
 * `analysis_data_air_quality.ipynb`: File notebook yang digunakan untuk mengolah dan menganalisa dataset
