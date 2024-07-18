@@ -1,6 +1,6 @@
 # Indeks Kualitas Udara (AQI) Beijing
 
-![Uploading Streamlit - Google Chrome 2024-07-18 16-58-53 (1).gif…]()
+![Streamlit - Google Chrome 2024-07-18 16-58-53](https://github.com/user-attachments/assets/8c5b1924-8545-4841-8cf1-0c430b537644)
 
 Akses dashboard: [AQI Dashboard](https://beijing-air-quality-dashboard.streamlit.app/)
 
