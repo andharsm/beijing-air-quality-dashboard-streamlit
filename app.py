@@ -29,12 +29,10 @@ def predict_data(dict_df):
 
 @st.cache_data
 def get_gemini():
-    genai.configure(api_key="AIzaSyBua5Fhi9lO-9504AIOlKsCOnTiJ3Q5fUk")
+    genai.configure(api_key="AIzaSyAMBjo_Ea9DcWw2pKmiFKwpQEaxhjKoKMI")
     # Inisialisasi model atau tugas yang ingin Anda lakukan
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     return model
-
-# gemini = get_gemini()
 
 def main():
     st.title("Indeks Kualitas Udara (AQI) Beijing")
@@ -195,10 +193,8 @@ def main():
     arah_angin=result_dict[selected_district].iloc[-3]['wd']
     tekanan=result_dict[selected_district].iloc[-3]['PRES']
 
-
-    genai.configure(api_key="AIzaSyAMBjo_Ea9DcWw2pKmiFKwpQEaxhjKoKMI")
     # Inisialisasi model atau tugas yang ingin Anda lakukan
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = get_gemini()
 
     text = f'Sebagai profesional analisis, insight apa yang kamu dapatkan berdasarkan gambar berikut dan kondisi distrik dengan Status: {status}, \nPolutan Utama: {polutan}, suhu: {suhu}, titik embun: {titik_embun}, tekanan: {tekanan} kecepatan dan arah angin {arah_angin} {kecepatan_angin}'
     with st.expander("Analisa Gemini"):
