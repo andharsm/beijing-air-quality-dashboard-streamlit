@@ -801,4 +801,4 @@ def gemini_analyze(text, fig, model):
         return result
 
     except Exception as e:
-        return f"An error occurred: {e}"
+        return f"Terjadi masalah pada proses analisa gemini: \n{e}"
