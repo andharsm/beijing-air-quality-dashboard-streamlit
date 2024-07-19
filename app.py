@@ -1,4 +1,3 @@
-from unittest import result
 import streamlit as st
 import pandas as pd
 import os
@@ -334,6 +333,7 @@ def main():
         return fig, df
     
     fig, df = display_map(tanggal_dan_waktu, result_dict)
+
     st.plotly_chart(fig)
 
     text = f'Sebagai profesional analisis, insight apa yang kamu dapatkan berdasarkan gambar geo map terhadap kondisi AQI berikut fokuslah untuk membahas variabel pada AQI dengan keterangan hijau adalah kondisi terbaik dan coklat berbahaya kamu dapat melihat panduan indeks AQI WHO terkait warna dan value AQI, sebagai detail ini data lengkapnya {df}'
